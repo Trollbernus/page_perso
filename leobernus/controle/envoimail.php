@@ -1,5 +1,8 @@
 <?php
-$mail = 'leo.bernus@gmail.com'; // Déclaration de l'adresse de destination.
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+
+$mail = 'lbernus@crans.org'; // Déclaration de l'adresse de destination.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 {
 	$passage_ligne = "\r\n";
@@ -10,6 +13,9 @@ else
 }
 //=====Déclaration des messages au format texte et au format HTML.
 $message_txt = htmlspecialchars($_POST['tpost']);
+$auteur=htmlspecialchars($_POST['email']);
+$message_txt='Auteur :'.$auteur.'<br/>'.$message_txt;
+
 $message_html = $message_txt;
 //==========
  
@@ -21,9 +27,8 @@ $sujet = '[Message du site perso]';
 //=========
  
 //=====Création du header de l'e-mail.
-$auteur=htmlspecialchars($_POST['mail']);
-$header = "From: \"".$auteur."\"<".$auteur.">".$passage_ligne;
-$header.= "Reply-to: \"".$auteur."\" <".$auteur.">".$passage_ligne;
+$header = "From: \"test@crans.org\"<test@crans.org>".$passage_ligne;
+$header.= "Reply-to: \"test@crans.org\" <test@crans.org>".$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 //==========

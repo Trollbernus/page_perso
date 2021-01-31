@@ -1,7 +1,7 @@
 		<header>
 			<link rel="icon" href="vue/images/charte_bouton_ico.gif" type="image/gif">
 			<a class="header" href="index.html"></a>
-			<a href="index.php"><img  id="debut" class="head" src="vue/images/banniere.jpg" alt="Léo Bernus" title="Léo Bernus"></a>
+			<a href="index.php"><img  id="debut" class="head" src="vue/images/banniere_gd.png" height="300" alt="Léo Bernus" title="Léo Bernus"></a>
 		</header>
 
 
