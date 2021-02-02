@@ -23,6 +23,7 @@
 			<p><a href="http://www.librairie-tropiques.fr/">Librairie Tropiques</a>. Tout simplement la meilleure librairie du monde avec les meilleures conférences du monde.</p>
 			<p><a href="https://www.dominiquepagani.fr/">Association Avec Dominique Pagani</a>. Dominique Pagani est un philosophe qui anime des cours de philosophie pour tous les niveaux.</p>
 			<p><a href="https://luth.obspm.fr/~luthier/gourgoulhon/">Page perso d'Éric Gourgoulhon</a>. Contient de nombreuses ressources utiles en relativité générale.</p>
+			<p>Quelques tutoriels bien utiles pour apprendre à construire des sites internet : <a href="http://sdz.tdct.org/sdz/apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">html et css</a>, puis <a href="http://sdz.tdct.org/sdz/concevez-votre-site-web-avec-php-et-mysql.html">php et MySQL</a>.</p>
 		</section>
 
 		<?php include("vue/footer.php"); ?>
